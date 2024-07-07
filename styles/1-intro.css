@@ -5,6 +5,17 @@
   background-position: center;
 }
 
+/* 배경 이미지를 반투명 검정으로 가리기 */
+.intro__dark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.67);
+}
+
 @media (max-width: 768px) {
   .intro {
     height: 100vh;
