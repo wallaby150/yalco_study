@@ -16,14 +16,39 @@
   background-color: rgba(0, 0, 0, 0.67);
 }
 
+.intro__type {
+  display: inline-flex;
+  gap: 0.32em;
+  font-family: var(--font-code);
+  font-size: 2.8em;
+  font-weight: bold;
+  color: white;
+}
+
 @media (max-width: 768px) {
   .intro {
     height: 100vh;
+  }
+
+  .intro__type {
+    margin-top: 36vh;
+    flex-direction: column;
+    text-align: left;
   }
 }
 
 @media (min-width: 769px) {
   .intro {
     height: 500px;
+  }
+
+  .intro__type {
+    margin-top: 172px;
+    align-items: center;
+  }
+  .intro__type span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.25em;
   }
 }
