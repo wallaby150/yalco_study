@@ -25,6 +25,22 @@
   color: white;
 }
 
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.intro__type .underscore {
+  animation-name: blink;
+  animation-duration: 350ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 @media (max-width: 768px) {
   .intro {
     height: 100vh;
