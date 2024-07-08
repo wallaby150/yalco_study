@@ -1,3 +1,31 @@
+.header {
+  display: flex;
+  position: sticky;
+
+  z-index: 2;
+
+  top: 0;
+  height: var(--height-toolbar);
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-main);
+  color: white;
+}
+
+.header__homelink {
+  display: inline-block;
+  padding: 0 24px;
+  height: var(--height-toolbar);
+  line-height: var(--height-toolbar);
+  cursor: pointer;
+}
+
+.header__logo {
+  height: 48px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+
 @media (max-width: 768px) {
 }
 
