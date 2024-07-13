@@ -1,5 +1,30 @@
+.html-css {
+  margin: 56px 0;
+  display: inline-flex;
+  gap: 56px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 @media (max-width: 768px) {
+  #html {
+    border-bottom: 4px solid var(--color-light-bg);
+  }
+
+  .html-css {
+    flex-direction: column;
+  }
+
+  .html-css__logo {
+    width: 50%;
+  }
 }
 
 @media (min-width: 769px) {
+  #html {
+    border-right: 4px solid var(--color-light-bg);
+  }
+  .html-css__logo {
+    width: 144px;
+  }
 }
